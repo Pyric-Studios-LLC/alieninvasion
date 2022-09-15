@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "alieninvasion",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Alien Invasion",
+  "description": "A mod about alien invasion",
   "authors": [
-    "Me!"
+    "criosage"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,16 +14,16 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/alieninvasion/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "dev.criosage.alieninvasion.AlienInvasion"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "alieninvasion.mixins.json"
   ],
 
   "depends": {
