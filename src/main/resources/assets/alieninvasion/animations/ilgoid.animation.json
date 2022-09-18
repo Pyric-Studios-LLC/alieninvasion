@@ -1,11 +1,11 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.schmob.walk": {
+		"animation.ilgoid.walk": {
 			"loop": true,
 			"animation_length": 1.56,
 			"bones": {
-				"schmob": {
+				"ilgoid": {
 					"position": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -133,7 +133,7 @@
 				}
 			}
 		},
-		"animation.schmob.idle": {
+		"animation.ilgoid.idle": {
 			"loop": true,
 			"animation_length": 1.56,
 			"bones": {
@@ -192,7 +192,7 @@
 				}
 			}
 		},
-		"animation.schmob.attack": {
+		"animation.ilgoid.attack": {
 			"animation_length": 1.56,
 			"bones": {
 				"body": {
@@ -377,11 +377,11 @@
 				}
 			}
 		},
-		"animation.schmob.run": {
+		"animation.ilgoid.run": {
 			"loop": true,
 			"animation_length": 0.8,
 			"bones": {
-				"schmob": {
+				"ilgoid": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]

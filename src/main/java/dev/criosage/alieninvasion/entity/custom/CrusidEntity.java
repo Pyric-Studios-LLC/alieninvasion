@@ -1,22 +1,17 @@
 package dev.criosage.alieninvasion.entity.custom;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.HostileEntity;
-import net.minecraft.entity.passive.ChickenEntity;
 import net.minecraft.entity.passive.MerchantEntity;
-import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -25,11 +20,11 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class SchmobEntity extends HostileEntity implements IAnimatable {
+public class CrusidEntity extends HostileEntity implements IAnimatable {
     //Properties
     private AnimationFactory factory = new AnimationFactory(this);
     //Constructor
-    public SchmobEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public CrusidEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
     //Entity Methods
@@ -72,10 +67,10 @@ public class SchmobEntity extends HostileEntity implements IAnimatable {
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         event.getController().transitionLengthTicks = 0;
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.schmob.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.crusid.walk", true));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.schmob.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.crusid.idle", true));
         return PlayState.CONTINUE;
     }
     @Override

@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "dev.criosage.alieninvasion.AlienInvasion"
+    ],
+    "client": [
+      "dev.criosage.alieninvasion.AlienInvasionClient"
     ]
   },
   "mixins": [
