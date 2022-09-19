@@ -1,7 +1,7 @@
 package dev.criosage.alieninvasion;
 
 import dev.criosage.alieninvasion.entity.ModEntities;
-import dev.criosage.alieninvasion.entity.custom.IlgoidEntity;
+import dev.criosage.alieninvasion.entity.custom.*;
 import dev.criosage.alieninvasion.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -23,7 +23,12 @@ public class AlienInvasion implements ModInitializer {
 		GeckoLib.initialize();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.ILGOID, IlgoidEntity.setAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.CRUSID, IlgoidEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.CRUSID, CrusidEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.SKEEK, SkeekEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.SKLOM, SklomEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.MUTANT, MutantEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.SCHWIFT, SchwiftEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.FACE, FaceEntity.setAttributes());
 
 		LOGGER.info("Alien Invasion Initialized.");
 	}

@@ -1,0 +1,118 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sklom",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "sklom",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "right_leg",
+					"parent": "sklom",
+					"pivot": [-2, 10, 0],
+					"cubes": [
+						{"origin": [-4, 0, -2], "size": [4, 10, 4], "uv": [0, 36], "mirror": true}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "sklom",
+					"pivot": [2, 10, 0],
+					"cubes": [
+						{"origin": [0, 0, -2], "size": [4, 10, 4], "uv": [0, 36]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "sklom",
+					"pivot": [0, 10, 0],
+					"cubes": [
+						{"origin": [-4, 10, -2], "size": [8, 5, 4], "uv": [0, 27]}
+					]
+				},
+				{
+					"name": "chest",
+					"parent": "body",
+					"pivot": [0, 15, 0],
+					"cubes": [
+						{"origin": [-5, 15, -3], "size": [10, 5, 6], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "armor_two",
+					"parent": "chest",
+					"pivot": [-5, 20, 0],
+					"cubes": [
+						{"origin": [-9, 18, -3], "size": [5, 3, 6], "inflate": 0.1, "uv": [18, 32], "mirror": true}
+					]
+				},
+				{
+					"name": "armor_one",
+					"parent": "chest",
+					"pivot": [5, 20, 0],
+					"cubes": [
+						{"origin": [4, 18, -3], "size": [5, 3, 6], "inflate": 0.1, "uv": [18, 32]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "chest",
+					"pivot": [-5.3, 18, 0],
+					"cubes": [
+						{"origin": [-8, 7.9, -2.5], "size": [4, 12, 5], "uv": [32, 15], "mirror": true}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "chest",
+					"pivot": [5, 18, 0],
+					"cubes": [
+						{"origin": [4, 7.9, -2.5], "size": [4, 12, 5], "uv": [32, 15]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "chest",
+					"pivot": [0, 20, 0],
+					"cubes": [
+						{"origin": [-4, 19, -4], "size": [8, 8, 8], "uv": [0, 0]},
+						{"origin": [-1.5, 21, -5], "size": [3, 2, 1], "uv": [40, 5]}
+					]
+				},
+				{
+					"name": "eyebrows",
+					"parent": "head",
+					"pivot": [0, 25, -4],
+					"cubes": [
+						{"origin": [-4, 24, -5], "size": [8, 2, 1], "uv": [24, 0]}
+					]
+				},
+				{
+					"name": "mouth",
+					"parent": "head",
+					"pivot": [0, 20, -3],
+					"cubes": [
+						{"origin": [-3, 18, -5.5], "size": [6, 3, 4], "uv": [32, 8]}
+					]
+				},
+				{
+					"name": "bomb",
+					"parent": "sklom",
+					"pivot": [0, 5, -8],
+					"cubes": [
+						{"origin": [-5, 0, -13], "size": [10, 10, 10], "uv": [24, 44]}
+					]
+				}
+			]
+		}
+	]
+}

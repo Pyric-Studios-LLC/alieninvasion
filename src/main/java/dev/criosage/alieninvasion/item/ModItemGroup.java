@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
     public static final ItemGroup ALIENS = FabricItemGroupBuilder.build(
-            new Identifier(AlienInvasion.MOD_ID, "ilgoid_spawn_egg"), () -> new ItemStack(ModItems.ILGOID_SPAWN_EGG));
+            new Identifier(AlienInvasion.MOD_ID, "alieninvasiongroup"), () -> new ItemStack(ModItems.ILGOID_SPAWN_EGG));
 
     public static void registerModItemGroups() {
         AlienInvasion.LOGGER.debug("Registering mod item groups for " + AlienInvasion.MOD_ID);
