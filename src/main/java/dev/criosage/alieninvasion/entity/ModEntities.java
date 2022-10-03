@@ -32,7 +32,7 @@ public class ModEntities {
             Registry.ENTITY_TYPE,
             new Identifier(AlienInvasion.MOD_ID, "sklom"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, SklomEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.5f, 1.75f)).build()
+                    .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build()
     );
     public static final EntityType<SchwiftEntity> SCHWIFT = Registry.register(
             Registry.ENTITY_TYPE,
@@ -50,7 +50,7 @@ public class ModEntities {
             Registry.ENTITY_TYPE,
             new Identifier(AlienInvasion.MOD_ID, "mutant_ilgoid"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, MutantIlgoidEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.4f, 3.25f)).build()
+                    .dimensions(EntityDimensions.fixed(0.4f, 3f)).build()
     );
     public static final EntityType<MutantCrusidEntity> MUTANT_CRUSID = Registry.register(
             Registry.ENTITY_TYPE,
@@ -62,7 +62,7 @@ public class ModEntities {
             Registry.ENTITY_TYPE,
             new Identifier(AlienInvasion.MOD_ID, "mutant_sklom"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, MutantSklomEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.6f, 2.75f)).build()
+                    .dimensions(EntityDimensions.fixed(0.6f, 2.50f)).build()
     );
     public static void registerModEntities() {
         AlienInvasion.LOGGER.debug("Registering mod entities for " + AlienInvasion.MOD_ID);
