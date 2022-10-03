@@ -34,12 +34,6 @@ public class ModItems {
             new SpawnEggItem(ModEntities.SKLOM, 0x281b1b, 0xffa066,
                     new FabricItemSettings().group(ModItemGroup.ALIENS))
     );
-    public static final Item MUTANT_SPAWN_EGG = Registry.register(
-            Registry.ITEM,
-            new Identifier(AlienInvasion.MOD_ID, "mutant_spawn_egg"),
-            new SpawnEggItem(ModEntities.MUTANT, 0x437b8e, 0xadffb6,
-                    new FabricItemSettings().group(ModItemGroup.ALIENS))
-    );
     public static final Item SCHWIFT_SPAWN_EGG = Registry.register(
             Registry.ITEM,
             new Identifier(AlienInvasion.MOD_ID, "schwift_spawn_egg"),
@@ -50,6 +44,24 @@ public class ModItems {
             Registry.ITEM,
             new Identifier(AlienInvasion.MOD_ID, "face_spawn_egg"),
             new SpawnEggItem(ModEntities.FACE, 0xe5d9c2, 0x604f30,
+                    new FabricItemSettings().group(ModItemGroup.ALIENS))
+    );
+    public static final Item MUTANT_ILGOID_SPAWN_EGG = Registry.register(
+            Registry.ITEM,
+            new Identifier(AlienInvasion.MOD_ID, "mutant_ilgoid_spawn_egg"),
+            new SpawnEggItem(ModEntities.MUTANT_ILGOID, 0x437b8e, 0xadffb6,
+                    new FabricItemSettings().group(ModItemGroup.ALIENS))
+    );
+    public static final Item MUTANT_CRUSID_SPAWN_EGG = Registry.register(
+            Registry.ITEM,
+            new Identifier(AlienInvasion.MOD_ID, "mutant_crusid_spawn_egg"),
+            new SpawnEggItem(ModEntities.MUTANT_CRUSID, 0x286b61, 0x87807a,
+                    new FabricItemSettings().group(ModItemGroup.ALIENS))
+    );
+    public static final Item MUTANT_SKLOM_SPAWN_EGG = Registry.register(
+            Registry.ITEM,
+            new Identifier(AlienInvasion.MOD_ID, "mutant_sklom_spawn_egg"),
+            new SpawnEggItem(ModEntities.MUTANT_SKLOM, 0xff370c, 0x3d2d2d,
                     new FabricItemSettings().group(ModItemGroup.ALIENS))
     );
     public static void registerModItems() {

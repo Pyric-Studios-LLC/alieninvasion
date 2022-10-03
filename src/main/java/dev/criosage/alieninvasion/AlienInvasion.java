@@ -26,9 +26,12 @@ public class AlienInvasion implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.CRUSID, CrusidEntity.setAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.SKEEK, SkeekEntity.setAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.SKLOM, SklomEntity.setAttributes());
-		FabricDefaultAttributeRegistry.register(ModEntities.MUTANT, MutantEntity.setAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.SCHWIFT, SchwiftEntity.setAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.FACE, FaceEntity.setAttributes());
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MUTANT_ILGOID, MutantIlgoidEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.MUTANT_CRUSID, MutantIlgoidEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.MUTANT_SKLOM, MutantIlgoidEntity.setAttributes());
 
 		LOGGER.info("Alien Invasion Initialized.");
 	}

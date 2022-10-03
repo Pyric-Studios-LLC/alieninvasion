@@ -20,11 +20,11 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class MutantEntity extends HostileEntity implements IAnimatable {
+public class MutantIlgoidEntity extends HostileEntity implements IAnimatable {
     //Properties
     private AnimationFactory factory = new AnimationFactory(this);
     //Constructor
-    public MutantEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public MutantIlgoidEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
     //Entity Methods
@@ -67,10 +67,10 @@ public class MutantEntity extends HostileEntity implements IAnimatable {
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         event.getController().transitionLengthTicks = 0;
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mutant.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mutant_ilgoid.walk", true));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mutant.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mutant_ilgoid.idle", true));
         return PlayState.CONTINUE;
     }
     @Override

@@ -1,11 +1,14 @@
 {
   "itemGroup.alieninvasion.alieninvasiongroup": "Alien Invasion Mod",
 
-  "item.alieninvasion.ilgoid_spawn_egg": "Schmob Spawn Egg",
+  "item.alieninvasion.ilgoid_spawn_egg": "Ilgoid Spawn Egg",
   "item.alieninvasion.crusid_spawn_egg": "Crusid Spawn Egg",
   "item.alieninvasion.skeek_spawn_egg": "Skeek Spawn Egg",
   "item.alieninvasion.sklom_spawn_egg": "Sklom Spawn Egg",
-  "item.alieninvasion.mutant_spawn_egg": "Sklom Spawn Egg",
   "item.alieninvasion.schwift_spawn_egg": "Schwift Spawn Egg",
-  "item.alieninvasion.face_spawn_egg": "Face Spawn Egg"
+  "item.alieninvasion.face_spawn_egg": "Face Spawn Egg",
+
+  "item.alieninvasion.mutant_ilgoid_spawn_egg": "Mutant Ilgoid Spawn Egg",
+  "item.alieninvasion.mutant_crusid_spawn_egg": "Mutant Crusid Spawn Egg",
+  "item.alieninvasion.mutant_sklom_spawn_egg": "Mutant Sklom Spawn Egg"
 }

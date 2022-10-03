@@ -1,0 +1,168 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mutant_crusid",
+				"texture_width": 128,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "mutant_crusid",
+					"pivot": [0, 15, 0]
+				},
+				{
+					"name": "body",
+					"parent": "mutant_crusid",
+					"pivot": [0, 26, 0],
+					"cubes": [
+						{"origin": [-4.5, 26, -2.5], "size": [9, 7, 5], "uv": [0, 38]}
+					]
+				},
+				{
+					"name": "chest",
+					"parent": "body",
+					"pivot": [0, 33, 0],
+					"cubes": [
+						{"origin": [-7, 33, -4], "size": [14, 8, 8], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "chest",
+					"pivot": [0, 41, -2],
+					"cubes": [
+						{"origin": [-4, 41, -4], "size": [8, 2, 6], "uv": [0, 14]}
+					]
+				},
+				{
+					"name": "mouth_part",
+					"parent": "head",
+					"pivot": [-3, 43, -5],
+					"cubes": [
+						{"origin": [-4, 41, -6], "size": [5, 2, 2], "uv": [23, 16]}
+					]
+				},
+				{
+					"name": "mouth_part_two",
+					"parent": "head",
+					"pivot": [3, 43, -5],
+					"cubes": [
+						{"origin": [-1, 41, -6], "size": [5, 2, 2], "uv": [32, 12]}
+					]
+				},
+				{
+					"name": "head_mouth",
+					"parent": "head",
+					"pivot": [0, 43, 0],
+					"cubes": [
+						{"origin": [-3.5, 43.5, -5.8], "size": [7, 3, 1], "uv": [30, 0]},
+						{"origin": [-4, 43, -6], "size": [8, 6, 8], "uv": [0, 0]},
+						{"origin": [-8, 45, -2], "size": [4, 4, 8], "uv": [104, 0], "mirror": true},
+						{"origin": [4, 45, -2], "size": [4, 4, 8], "uv": [104, 0]},
+						{"origin": [4, 49, 2], "size": [4, 5, 4], "uv": [112, 12]},
+						{"origin": [8, 51, 2], "size": [6, 3, 4], "uv": [108, 21]},
+						{"origin": [11, 51, 6], "size": [3, 3, 5], "uv": [112, 28], "mirror": true},
+						{"origin": [-14, 51, 6], "size": [3, 3, 5], "uv": [112, 28]},
+						{"origin": [-14, 51, 2], "size": [6, 3, 4], "uv": [108, 21], "mirror": true},
+						{"origin": [-8, 49, 2], "size": [4, 5, 4], "uv": [112, 12], "mirror": true}
+					]
+				},
+				{
+					"name": "ear_two",
+					"parent": "head_mouth",
+					"pivot": [-4, 44, -3],
+					"rotation": [0, 15, 15],
+					"cubes": [
+						{"origin": [-9.5, 43, -3.5], "size": [6, 3, 1], "uv": [32, 8], "mirror": true}
+					]
+				},
+				{
+					"name": "ear",
+					"parent": "head_mouth",
+					"pivot": [4, 44, -3],
+					"rotation": [0, -15, -15],
+					"cubes": [
+						{"origin": [3, 43, -3.5], "size": [6, 3, 1], "uv": [32, 8]}
+					]
+				},
+				{
+					"name": "green_eyes",
+					"parent": "head_mouth",
+					"pivot": [0, 41, -2],
+					"cubes": [
+						{"origin": [-3.5, 43.5, -5.7], "size": [7, 3, 1], "uv": [30, 4]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "chest",
+					"pivot": [6.5, 38, 0],
+					"cubes": [
+						{"origin": [7, 29, -2.5], "size": [4, 11, 5], "uv": [46, 0]}
+					]
+				},
+				{
+					"name": "left_forearm",
+					"parent": "left_arm",
+					"pivot": [9, 29, 0],
+					"cubes": [
+						{"origin": [6.5, 15, -3], "size": [5, 14, 6], "uv": [44, 16]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "chest",
+					"pivot": [-6, 36, 0],
+					"cubes": [
+						{"origin": [-11, 29, -2.5], "size": [4, 11, 5], "uv": [46, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "right_forearm",
+					"parent": "right_arm",
+					"pivot": [-9, 29, 0],
+					"cubes": [
+						{"origin": [-11.5, 15, -3], "size": [5, 14, 6], "uv": [44, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "mutant_crusid",
+					"pivot": [2.5, 26, 0],
+					"cubes": [
+						{"origin": [0.5, 14, -3], "size": [5, 12, 6], "uv": [64, 0]}
+					]
+				},
+				{
+					"name": "left_knee",
+					"parent": "left_leg",
+					"pivot": [3, 14, 0],
+					"cubes": [
+						{"origin": [1, 0, -2.5], "size": [4, 14, 5], "uv": [66, 18]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "mutant_crusid",
+					"pivot": [-2.5, 26, 0],
+					"cubes": [
+						{"origin": [-5.5, 14, -3], "size": [5, 12, 6], "uv": [64, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "right_knee",
+					"parent": "right_leg",
+					"pivot": [-3, 14, 0],
+					"cubes": [
+						{"origin": [-5, 0, -2.5], "size": [4, 14, 5], "uv": [66, 18], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

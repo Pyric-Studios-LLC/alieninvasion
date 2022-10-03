@@ -1,11 +1,11 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.mutant.walk": {
+		"animation.mutant_ilgoid.walk": {
 			"loop": true,
 			"animation_length": 1.56,
 			"bones": {
-				"mutant_schmobs": {
+				"mutant_ilgoid": {
 					"position": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -204,7 +204,7 @@
 				}
 			}
 		},
-		"animation.mutant.idle": {
+		"animation.mutant_ilgoid.idle": {
 			"loop": true,
 			"animation_length": 1.56,
 			"bones": {
@@ -383,11 +383,11 @@
 				}
 			}
 		},
-		"animation.mutant.run": {
+		"animation.mutant_ilgoid.run": {
 			"loop": true,
 			"animation_length": 0.8,
 			"bones": {
-				"mutant_schmobs": {
+				"mutant_ilgoid": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -645,10 +645,10 @@
 				}
 			}
 		},
-		"animation.mutant.attack": {
+		"animation.mutant_ilgoid.attack": {
 			"animation_length": 3.6,
 			"bones": {
-				"mutant_schmobs": {
+				"mutant_ilgoid": {
 					"position": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -1147,10 +1147,10 @@
 				}
 			}
 		},
-		"animation.mutant.kick": {
+		"animation.mutant_ilgoid.stomp": {
 			"animation_length": 2.4,
 			"bones": {
-				"mutant_schmobs": {
+				"mutant_ilgoid": {
 					"position": {
 						"0.0": {
 							"vector": [0, 0, 0]

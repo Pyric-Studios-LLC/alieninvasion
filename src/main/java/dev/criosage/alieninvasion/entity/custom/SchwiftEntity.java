@@ -58,7 +58,7 @@ public class SchwiftEntity extends AbstractHorseEntity implements IAnimatable {
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         event.getController().transitionLengthTicks = 0;
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.schwift.run", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.schwift.walk", true));
             return PlayState.CONTINUE;
         }
         event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.schwift.idle", true));

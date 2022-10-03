@@ -4,6 +4,15 @@
 
 Install via a mod installer
 
+## To Do List:
+- ~~Implement all basic entities.~~
+- ~~Fix all hit boxes.~~
+- Rename all necessary mobs.
+
+## Potential Names
+- Skeek = Skivian
+- Sklom = Borian
+
 ## License
 
 MIT License

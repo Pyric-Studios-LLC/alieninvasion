@@ -12,7 +12,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -21,11 +20,11 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class IlgoidEntity extends HostileEntity implements IAnimatable {
+public class MutantSklomEntity extends HostileEntity implements IAnimatable {
     //Properties
     private AnimationFactory factory = new AnimationFactory(this);
     //Constructor
-    public IlgoidEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public MutantSklomEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
     //Entity Methods
@@ -68,10 +67,10 @@ public class IlgoidEntity extends HostileEntity implements IAnimatable {
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         event.getController().transitionLengthTicks = 0;
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ilgoid.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mutant_sklom.walk", true));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ilgoid.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.mutant_sklom.idle", true));
         return PlayState.CONTINUE;
     }
     @Override
