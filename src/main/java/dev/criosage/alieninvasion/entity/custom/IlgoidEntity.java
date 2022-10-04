@@ -21,7 +21,7 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-public class IlgoidEntity extends HostileEntity implements IAnimatable {
+public class IlgoidEntity extends AlienEntity implements IAnimatable {
     //Properties
     private AnimationFactory factory = new AnimationFactory(this);
     //Constructor
@@ -75,9 +75,12 @@ public class IlgoidEntity extends HostileEntity implements IAnimatable {
         return PlayState.CONTINUE;
     }
     @Override
-    public void registerControllers(AnimationData animationData) {
-        animationData.addAnimationController(new AnimationController(this, "controller",
+    public void registerControllers(AnimationData data) {
+        data.addAnimationController(new AnimationController(this, "controller",
                 0, this::predicate));
+        AnimationController<IlgoidEntity> default_controller = new AnimationController<IlgoidEntity>(this,
+                "controller", 0,
+                this::predicate);
     }
 
     @Override
